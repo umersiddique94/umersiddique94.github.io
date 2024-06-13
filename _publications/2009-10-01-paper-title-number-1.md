@@ -3,7 +3,7 @@ title: Learning fair policies in multi-objective (deep) reinforcement learning w
 collection: publications
 permalink: /publication/2009-10-01-paper-title-number-1
 excerpt: 'Learning fair policies in multi-objective (deep) reinforcement learning with average and discounted rewards'
-date: 2020
+date: 2020-10-01
 venue: 'International Conference on Machine Learning (ICML)'
 slidesurl: 'https://slideslive.com/38928455/learning-fair-policies-in-multiobjective-deep-reinforcement-learning-with-average-and-discounted-rewards?ref=recommended'
 paperurl: 'https://arxiv.org/abs/2008.07773'
