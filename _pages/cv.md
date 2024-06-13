@@ -7,39 +7,47 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %}
 
-Education
+Education 
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Electrical Engineering, University of Texas at San Antonio (2022-Present) 
+  * Advisor: Dr. Yongcan Cao
+* M.S. in Artificial Intelligence, University of Michigan-Shanghai Jiao Tong University Joint Institute (2018-2021)
+  * Advisor: Dr. Paul Weng
+  * Thesis: "Fairness in Deep Reinforcement Learning"
+* B.S. in Infomation Technology, University of Agriculture Faisalabad (2013-2017)
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Fall 2022 -Present: Research Assistant [Unmanned Systems Lab](https://utsausl.wixsite.com/utsausl), San Antonio, TX
+  * Research Interests: Reinforcement Learning (RL), Multi-Agent RL, Multi-Objective RL, Preference-based RL, Autonomous Systems
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Dec 2021- May 2022: Artificial Intelligence Engineer at Neurog, Islamabad, Pakistan
+  * Led a small team to work on deep RL.
+  * Developed a deep RL solutions for crypto trading.
+  * Developed a deep RL farmework for controlling a unity3D environment using the Unity ML-Agents toolkit. 
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+
+* Summer 2017: Research Intern at Pakistan Telecommunication Company Limited (PTCL), Pakistan
+  * Worked in Switching and Transmission Department
+  * Developed a web-based application for monitoring the performance of the network.
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Machine Learning
+* Deep Learning
+* Reinforcement Learning
+* Multi-Objective Optmiization
+* Programming
+* Teaching
+* Book Reading
+
+Reviewer
+======
+* [Neural Computing and Applications](https://link.springer.com/journal/521)
+* [Conference on Neural Information Processing Systems (NIPS)](https://neurips.cc/)
+* [International Conference on Intelligent Robots and Systems (IROS)](https://ieee-iros.org/)
+
 
 Publications
 ======
@@ -47,18 +55,9 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
+ 
 Teaching
 ======
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams

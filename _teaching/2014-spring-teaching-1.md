@@ -1,20 +1,15 @@
 ---
-title: "Teaching experience 1"
+title: "Computer Science Lecturer"
 collection: teaching
-type: "Undergraduate course"
+type: "High School"
 permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
-date: 2014-01-01
-location: "City, Country"
+venue: "Government College Satiana Road, Pakistan"
+date: 2017-05-01
+location: "Faisalabad, Pakistan"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+In this session, I taught the following courses:
 
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
+* Introduction to Computer Science
+* Introduction to Programming
+* Database Management Systems
