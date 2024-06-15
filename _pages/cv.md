@@ -40,7 +40,7 @@ Skills
 * Multi-Objective Optmiization
 * Programming
 * Teaching
-* Book Reading
+
 
 Reviewer
 ======
