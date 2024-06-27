@@ -2,7 +2,6 @@
 title: Learning fair policies in decentralized cooperative multi-agent reinforcement learning
 collection: publications
 permalink: /publication/2021-ICML-Fair-MARL-SOTO
-excerpt: 'This paper is about learning fair policies in decentralized cooperative multi-agent reinforcement learning.'
 date: 2021-06-01
 venue: 'International Conference on Machine Learning (ICML)'
 paperurl: 'https://arxiv.org/pdf/2012.09421'

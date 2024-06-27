@@ -2,7 +2,6 @@
 title: Fair deep reinforcement learning with preferential treatment
 collection: publications
 permalink: /publication/2023-ECAI-FAir-Pref
-excerpt: 'Fair deep reinforcement learning with preferential treatment'
 date: 2023-06-01
 venue: 'European Conference on Artificial Intelligence (ECAI)'
 paperurl: 'https://ebooks.iospress.nl/doi/10.3233/FAIA230606'

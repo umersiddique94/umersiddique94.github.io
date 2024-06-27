@@ -2,7 +2,6 @@
 title: Fairness in Preference-based Reinforcement Learning
 collection: publications
 permalink: /publication/2023-MFPL-ICML
-excerpt: 'Fairness in preference-based reinforcement learning.'
 date: 2023-05-01
 venue: 'MFPL @ International Conference on Machine Learning'
 paperurl: 'https://arxiv.org/pdf/2306.09995'
