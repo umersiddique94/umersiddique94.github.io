@@ -17,6 +17,6 @@ News
 
 Recent Publications
 ======
-<ul>{% for post in site.publications reversed %}
+<ul>{% for post in site.publications limit:6 %}
   {% include archive-single-cv.html %}
 {% endfor %}</ul>
