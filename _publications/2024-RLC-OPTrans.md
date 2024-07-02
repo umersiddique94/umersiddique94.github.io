@@ -1,5 +1,5 @@
 ---
-title: Opponent Transformer: Modeling Opponent Policies as a Sequence Problem
+title: Opponent Transformer Modeling Opponent Policies as a Sequence Problem
 collection: publications
 permalink: /publication/2024-RLC-OPTrans
 date: 2024-07-01
