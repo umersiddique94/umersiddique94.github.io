@@ -11,9 +11,11 @@ As a PhD Researcher in the [Unmanned Systems Lab](https://utsausl.wixsite.com/ut
 
 News
 ======
-{% for news in site.data.news%}
-  {{ item.date }}: {{ item.content }}
+<ul>
+{% for news in site.data.news %}
+  <li><strong>{{ news.date }}:</strong> {{ news.content }}</li>
 {% endfor %}
+</ul>
 <!-- ======
 <ul>{% for post in site.news limit:3 %}
  {% include archive-single.html %}
