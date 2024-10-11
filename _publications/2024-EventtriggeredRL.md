@@ -1,7 +1,7 @@
 ---
 title: Adaptive Event-triggered Reinforcement Learning Control for Complex Nonlinear Systems
 collection: publications
-permalink: /publication/2023-MFPL-ICML
+permalink: /publication/2024-EventtriggeredRL
 date: 2024-10-10
 venue: 'Arxiv'
 paperurl: 'https://arxiv.org/abs/2409.19769'
