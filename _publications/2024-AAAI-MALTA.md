@@ -1,5 +1,5 @@
 ---
-title: Fairness in Traffic Control: Decentralized Multi-agent Reinforcement Learning with Generalized Gini Welfare Functions
+title: 'Fairness in Traffic Control: Decentralized Multi-agent Reinforcement Learning with Generalized Gini Welfare Functions'
 collection: publications
 permalink: /publication/2024-AAAI-MALTA
 date: 2024-12-09
