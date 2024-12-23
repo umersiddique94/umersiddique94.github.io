@@ -1,11 +1,11 @@
 ---
 title: 'Fairness in Traffic Control: Decentralized Multi-agent Reinforcement Learning with Generalized Gini Welfare Functions'
 collection: publications
-permalink: /publication/2024-AAAI-MALTA
+permalink: /publication/2025-AAAI-MALTA
 date: 2024-12-09
-venue: 'MALTA Workshop @ AAAI'
+venue: 'MALTA Workshop @ AAAI 2025'
 paperurl: ' '
-citation: 'Siddique, Umer, Peilang Li, and Yongcan Cao. "Fairness in Traffic Control: Decentralized Multi-agent Reinforcement Learning with Generalized Gini Welfare Functions." MALTA Workshop @ AAAI. 2024.'
+citation: 'Siddique, Umer, Peilang Li, and Yongcan Cao. "Fairness in Traffic Control: Decentralized Multi-agent Reinforcement Learning with Generalized Gini Welfare Functions." MALTA Workshop @ AAAI. 2025.'
 ---
 
 In this paper, we address the issue of learning fair policies in decentralized cooperative multi-agent reinforcement learning (MARL), with a focus on traffic light control systems. 
