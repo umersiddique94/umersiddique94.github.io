@@ -47,6 +47,12 @@ Reviewer
 * [Neural Computing and Applications](https://link.springer.com/journal/521)
 * [Conference on Neural Information Processing Systems (NIPS)](https://neurips.cc/)
 * [International Conference on Intelligent Robots and Systems (IROS)](https://ieee-iros.org/)
+* [International Conference on Machine Learning (ICML)](https://icml.cc/)
+* [International Conference on Learning Representations (ICLR)](https://iclr.cc/)
+* [International Conference on Artificial Intelligence (AAAI)](https://aaai.org/Conferences/AAAI-22/)
+* [International Conference on Artificial Intelligence and Statistics (AISTATS)](https://aistats.org/aistats2025/)
+* [IEEE Robotics and Automation Letters (RA-L)](https://www.ieee-ras.org/publications/ra-l)
+
 
 
 Publications
