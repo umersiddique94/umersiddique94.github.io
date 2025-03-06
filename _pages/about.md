@@ -18,7 +18,7 @@ As a PhD Researcher in the [Unmanned Systems Lab](https://utsausl.wixsite.com/ut
 </ul> -->
 
 <ul>
-{% for news in site.data.news limit:10 %}
+{% for news in site.data.news limit:15 %}
   <li><strong>{{ news.date }}</strong>: {{ news.content }}</li>
 {% endfor %}
 </ul>
@@ -26,7 +26,7 @@ As a PhD Researcher in the [Unmanned Systems Lab](https://utsausl.wixsite.com/ut
 
 Recent Publications
 ======
-<ul>{% for post in site.publications limit:5 %}
+<ul>{% for post in site.publications reversed limit:5 %}
   {% include archive-single-cv.html %}
 {% endfor %}</ul>
 <p><a href="/publications/">More Publications</a></p>
