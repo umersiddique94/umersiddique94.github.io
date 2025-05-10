@@ -13,5 +13,4 @@ We show that standard MARL methods that optimize the expected rewards often lead
 To overcome this limitation, we aim to design control policies that optimize a generalized Gini welfare function that explicitly encodes two aspects of fairness: efficiency and equity. 
 Specifically, we propose three novel adaptations of MARL baselines that enable agents to learn decentralized fair policies, where each agent estimates its local value function while contributing to welfare optimization. 
 We validate our approaches through extensive experiments across six traffic control environments with varying complexities and traffic layouts. 
-The results demonstrate that our proposed methods consistently outperform existing MARL approaches both in terms of efficiency and equity.
- <!-- [Download paper here](https://openreview.net/pdf?id=OC5aj4oVdL) -->
+The results demonstrate that our proposed methods consistently outperform existing MARL approaches both in terms of efficiency and equity. [Download paper here](https://openreview.net/forum?id=Y1wckpUjsd)
