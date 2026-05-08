@@ -26,7 +26,8 @@ As a PhD Researcher in the [Unmanned Systems Lab](https://utsausl.wixsite.com/ut
 
 Recent Publications
 ======
-<ul>{% for post in site.publications reversed limit:10 %}
+{% assign recent_pubs = site.publications | sort: 'date' | reverse %}
+<ul>{% for post in recent_pubs limit:10 %}
   {% include archive-single-cv.html %}
 {% endfor %}</ul>
 <p><a href="/publications/">More Publications</a></p>
