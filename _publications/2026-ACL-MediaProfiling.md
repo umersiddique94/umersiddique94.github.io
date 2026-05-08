@@ -3,6 +3,7 @@ title: 'A Multi-View Media Profiling Suite: Resources, Evaluation, and Analysis'
 collection: publications
 permalink: /publication/2026-ACL-MediaProfiling
 date: 2026-04-15
+published: true
 venue: 'ACL 2026'
 paperurl: ' '
 citation: 'Manzoor, Muhammad Arslan, Dilshod Azizov, Daniil Orel, Umer Siddique, Zain Muhammad Mujahid, Yufang Hou, and Preslav Nakov. "A Multi-View Media Profiling Suite: Resources, Evaluation, and Analysis." ACL 2026.'

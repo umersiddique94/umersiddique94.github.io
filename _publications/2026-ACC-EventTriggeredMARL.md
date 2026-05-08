@@ -3,6 +3,7 @@ title: 'Adaptive Event-Triggered Policy Gradient for Multi-Agent Reinforcement L
 collection: publications
 permalink: /publication/2026-ACC-EventTriggeredMARL
 date: 2026-01-15
+published: true
 venue: 'ACC 2026'
 paperurl: ' '
 citation: 'Siddique, Umer, et al. "Adaptive Event-Triggered Policy Gradient for Multi-Agent Reinforcement Learning." ACC 2026.'

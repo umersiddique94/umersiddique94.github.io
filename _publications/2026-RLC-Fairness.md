@@ -3,6 +3,7 @@ title: 'Inference-Time Policy Alignment for Fair Reinforcement Learning'
 collection: publications
 permalink: /publication/2026-RLC-Fairness
 date: 2026-05-10
+published: true
 venue: 'Reinforcement Learning Conference (RLC) 2026'
 paperurl: 'https://openreview.net/forum?id=hK3PNEnbNf'
 citation: 'Siddique, Umer, Peilang Li, Conor Wallace, and Yongcan Cao. "Inference-Time Policy Alignment for Fair Reinforcement Learning." Reinforcement Learning Conference (RLC) 2026.'
