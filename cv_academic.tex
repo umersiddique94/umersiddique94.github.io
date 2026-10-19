@@ -1,0 +1,254 @@
+% ============================================================
+% Umer Siddique -- Academic CV
+% For Assistant Professor and Postdoctoral applications
+% Order: Focus -> Education -> Experience (incl. sponsored projects) -> Awards -> Publications -> Teaching ...
+% Compile with XeLaTeX
+% ============================================================
+\documentclass[letterpaper,11pt]{article}
+\usepackage[margin=0.6in, top=0.6in, bottom=0.65in]{geometry}
+
+\usepackage{fontspec}
+\usepackage{url,parskip}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0,0.2}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont{Latin Modern Roman}
+
+\titleformat{\section}{\large\bfseries\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{4pt}
+\titleformat{\subsection}{\normalsize\bfseries\raggedright}{}{0em}{}
+\titlespacing{\subsection}{0pt}{7pt}{2pt}
+
+\setlength{\parindent}{0pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[R]{\small Page \thepage\ of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+
+\newlist{cvlist}{itemize}{1}
+\setlist[cvlist]{label=\textbullet, leftmargin=14pt, nosep, topsep=1pt, itemsep=2pt}
+
+\newlist{publist}{enumerate}{1}
+\setlist[publist]{leftmargin=*, align=left, nosep, topsep=2pt, itemsep=2pt}
+
+\begin{document}
+
+%--------------------HEADER-----------------------------------
+\begin{center}
+    {\Huge \textbf{Umer Siddique}} \\[6pt]
+    Department of Electrical and Computer Engineering \\
+    University of Texas at San Antonio, San Antonio, TX, USA \\[4pt]
+    \href{mailto:umersiddique297@gmail.com}{umersiddique297@gmail.com} \,|\,
+    \href{https://umersiddique94.github.io/}{umersiddique94.github.io} \,|\,
+    \href{https://scholar.google.com/citations?user=ukObVHAAAAAJ}{Google Scholar} \,|\,
+    \href{https://github.com/umersiddique94}{GitHub}
+\end{center}
+
+%--------------------RESEARCH INTERESTS-----------------------------------
+\section*{Research Focus}
+My research focuses on \textbf{AI alignment through reinforcement learning (RL) for fair, safe, and socially aligned decision making}. I develop RL methods that enable autonomous decision-making systems to account for competing objectives, stakeholder preferences, and safety requirements. My work spans multi-objective and preference-based RL, multi-agent systems, and alignment of learned decision-making systems, with applications to autonomous and real-world systems.
+
+%--------------------EDUCATION-----------------------------------
+\section*{Education}
+\textbf{PhD, Electrical Engineering} \hfill \textit{2022--Dec 2026 (expected)} \\
+University of Texas at San Antonio, USA \\
+Advisor: Prof.\ Yongcan Cao \\
+Dissertation: \textit{AI Alignment through Reinforcement Learning: Fairness, Safety, and Social Welfare Optimization}
+
+\textbf{MS, Information and Communication Engineering} \hfill \textit{2018--2021} \\
+University of Michigan--Shanghai Jiao Tong University Joint Institute, Shanghai, China \\
+Advisor: Prof.\ Paul Weng
+
+% \textbf{BS, Information Technology}, University of Agriculture Faisalabad, Pakistan \hfill \textit{2013--2017} \\
+% Advisor: Prof.\ Tasleem Mustafa.
+
+%--------------------RESEARCH POSITIONS-----------------------------------
+\section*{Research and Professional Experience}
+\textbf{Graduate Research Assistant}, University of Texas at San Antonio \hfill \textit{2022--Present} \\
+Sponsored projects:
+\begin{cvlist}
+    \item \textbf{Resource-Aware RL for Autonomous Systems}, Office of Naval Research \hfill \textit{2022--Present} \\
+    \textbf{Lead Graduate Researcher.} Lead research on resource-aware RL for autonomous systems, including event-triggered and self-triggered learning methods that reduce policy-update computation by approximately 40\% relative to fixed-interval baselines at matched return. Prepare quarterly and annual technical reports and present research findings at Navy CAST program reviews (2023--2026).
+    \item \textbf{Human-Aligned RL for Decision Support}, Army Research Laboratory \hfill \textit{2022--Present} \\
+    \textbf{Graduate Researcher.} Co-lead research on fairness and bias mitigation in RL and multi-agent decision-support systems.
+\end{cvlist}
+
+\textbf{AI Engineer}, Neurog, Islamabad, Pakistan \hfill \textit{Dec 2021--May 2022} \\
+Built and deployed RL agents for financial portfolio optimization and strategic game-playing.
+
+\textbf{Research Assistant}, UM--SJTU Joint Institute, Shanghai, China \hfill \textit{2018--2021} \\
+Fair multi-objective and decentralized multi-agent RL with Prof.\ Paul Weng (ICML 2020, ICML 2021).
+
+%--------------------RESEARCH SUMMARY-----------------------------------
+% \section*{Research Program}
+% My research asks how reinforcement learning systems should aggregate competing objectives when the standard answer---a weighted linear sum---is inadequate. Linear scalarization is the default in multi-objective RL, in multi-agent credit assignment, and in the reward models and rubric verifiers used to align large language models. It is also the mechanism by which a system can appear well-behaved on average while failing badly on a particular objective, agent, or evaluation criterion.
+
+% I formulate these problems instead as optimization of nonlinear social welfare functions---Generalized Gini, Nash, and maximin---over per-objective returns, which makes such failures visible and penalized rather than averaged away. This framing began with fairness in multi-objective RL (ICML 2020), extended to decentralized cooperative multi-agent settings (ICML 2021), to preference-based RL where the welfare function is learned from human comparisons (\textit{Machine Learning Journal}), and most recently to LLM alignment, where I replace linear rubric aggregation with nonlinear welfare functions and move the scalarization inside the expectation (COLM 2026 workshop).
+
+% A second, complementary line concerns \emph{inference-time} alignment: adapting an already-trained policy to new fairness or safety criteria at deployment without retraining (RLC 2026, and an extension to safety constraints currently under review). A third applies these methods to autonomous systems under real resource constraints, supported by the Office of Naval Research and the Army Research Laboratory.
+
+%--------------------AWARDS-----------------------------------
+\section*{Research Awards and Honors}
+\begin{cvlist}
+    \item \textbf{Jamshidi Fellowship}, University of Texas at San Antonio, 2026. Awarded annually to one outstanding researcher; \$3,500 award.
+    \item \textbf{Gold Reviewer Award}, International Conference on Machine Learning (ICML), 2026.
+    \item \textbf{Best Paper Award}, Adaptive Learning Agents (ALA) Workshop at AAMAS, 2023. Sponsored by \textit{Neural Computing and Applications}.
+    \item \textbf{Student Travel and Volunteer Award}, AAAI, 2024.
+    \item \textbf{Student Award}, Reinforcement Learning Conference (RLC), 2024. Sponsored by the Cooperative AI Foundation.
+\end{cvlist}
+
+
+%--------------------PUBLICATIONS-----------------------------------
+\section*{Publications}
+% {\small Author names in bold indicate my own. Full record and citation counts: \href{https://scholar.google.com/citations?user=ukObVHAAAAAJ}{Google Scholar}.}
+
+\subsection*{Refereed Journal Articles}
+\begin{publist}[label={[J\arabic*]}]
+    \item \textbf{Umer Siddique}, A. Sinha, Y. Cao. ``Learning Fair Policies in Multi-Objective Preference-based Reinforcement Learning.'' \textit{Machine Learning Journal (MLJ)}, 2025.
+    \item \textbf{Umer Siddique}, P. Li, Y. Cao. ``Fair Multi-Agent Reinforcement Learning for Traffic Control.'' \textit{Journal on Autonomous Transportation Systems (JATS)}, 2025.
+    \item J. Qian, \textbf{Umer Siddique}, G. Yu, P. Weng. ``From Fair Solutions to Compromise Solutions in Multi-Objective Deep Reinforcement Learning.'' \textit{Neural Computing and Applications}, 2025.
+    \item S. Abahussein, D. Ye, C. Zhu, Z. Cheng, \textbf{Umer Siddique}, S. Shen. ``Multi-Agent Reinforcement Learning for Online Food Delivery with Location Privacy Preservation.'' \textit{Information}, 2023.
+\end{publist}
+
+\subsection*{Refereed Conference Proceedings}
+\begin{publist}[label={[C\arabic*]}]
+    \item \textbf{Umer Siddique}, P. Li, C. Wallace, Y. Cao. ``Inference-Time Policy Alignment for Fair Reinforcement Learning.'' \textit{Reinforcement Learning Conference (RLC)}, 2026.
+    \item \textbf{Umer Siddique}, A. Sinha, Y. Cao. ``Adaptive Event-triggered Policy Gradient for Multi-Agent Reinforcement Learning.'' \textit{American Control Conference (ACC)}, 2026.
+    \item \textbf{Umer Siddique}, P. Kumar, A. Sinha, Y. Cao. ``Deep Reinforcement Learning for Target Enclosing Under Limited Sensing and Autopilot Lag.'' \textit{AIAA SCITECH}, 2026.
+    \item M. A. Manzoor, D. Azizov, D. Orel, \textbf{Umer Siddique}, Z. M. Mujahid, Y. Hou, P. Nakov. ``A Multi-View Media Profiling Suite: Resources, Evaluation, and Analysis.'' \textit{Annual Meeting of the Association for Computational Linguistics (ACL)}, 2026.
+    \item \textbf{Umer Siddique}, P. Li, Y. Cao. ``Learning Fair Pareto-Optimal Policies in Multi-Objective Reinforcement Learning.'' \textit{Reinforcement Learning Conference (RLC)}, 2025.
+    \item P. Li, \textbf{Umer Siddique}, Y. Cao. ``From Explainability to Interpretability: Interpretable Reinforcement Learning Via Model Explanations.'' \textit{Reinforcement Learning Conference (RLC)}, 2025.
+    \item C. Wallace, \textbf{Umer Siddique}, Y. Cao. ``TransAM: Transformer-Based Agent Modeling for Multi-Agent Systems via Local Trajectory Encoding.'' \textit{Reinforcement Learning Conference (RLC)}, 2025.
+    \item \textbf{Umer Siddique}, A. Sinha, Y. Cao. ``Adaptive Event-triggered Reinforcement Learning Control for Complex Nonlinear Systems.'' \textit{American Control Conference (ACC)}, 2025.
+    \item G. Yu, \textbf{Umer Siddique}, P. Weng. ``Fair Deep Reinforcement Learning with Preferential Treatment.'' \textit{European Conference on Artificial Intelligence (ECAI)}, 2023.
+    \item \textbf{Umer Siddique}, A. Sinha, Y. Cao. ``On Deep Reinforcement Learning for Target Capture Autonomous Guidance.'' \textit{AIAA SCITECH}, 2023.
+    \item M. Zimmer, C. Glanois, \textbf{Umer Siddique}, P. Weng. ``Learning Fair Policies in Decentralized Cooperative Multi-Agent Reinforcement Learning.'' \textit{ICML}, 2021.
+    \item \textbf{Umer Siddique}, P. Weng, M. Zimmer. ``Learning Fair Policies in Multi-Objective (Deep) Reinforcement Learning with Average and Discounted Rewards.'' \textit{International Conference on Machine Learning (ICML)}, 2020.
+\end{publist}
+
+\subsection*{Patents}
+\begin{publist}[label={[P\arabic*]}]
+    \item J. Cofield, \textbf{Umer Siddique}, Y. Cao. \textit{Scalable End-to-End Multi-Agent Simulation for Unmanned Vehicles.} U.S.\ Patent [Pending].
+\end{publist}
+
+\subsection*{Preprints}
+\begin{publist}[label={[U\arabic*]}]
+    \item \textbf{Umer Siddique}, P. Li, Y. Cao. ``Inference-Time Safety Alignment for Reinforcement Learning.''
+    \item P. Li, \textbf{Umer Siddique}, Y. Cao. ``SPID: Fidelity-Preserving Symbolic Policy Distillation for Interpretable Reinforcement Learning.''
+    \item P. Li, \textbf{Umer Siddique}, Y. Cao. ``Automated Interpretability for Diagnosing Reinforcement Learning Failures.''
+    \item Conor Wallace, \textbf{Umer Siddique}, Y. Cao, P. Li. ``BayesToM: Retrieval-Augmented Behavior Models for Calibrated Partner Identification.''
+    
+\end{publist}
+
+\subsection*{Refereed Workshop Papers and Extended Abstracts}
+\begin{publist}[label={[W\arabic*]}]
+    \item \textbf{Umer Siddique}, P. Li, Y. Cao. ``Right Goal, Wrong Body: Re-grounding Frozen VLAs under Actuation Shift.'' \textit{Workshop on The Science of Physical AI Safety, CoRL}, 2026.
+    \item \textbf{Umer Siddique}, P. Li, Y. Cao. ``Beyond the Weighted Sum: Rubric Aggregation for Multi-Criterion LLM Alignment.'' \textit{Workshop on Agent Behavior, COLM}, 2026.
+    \item P. Li, \textbf{Umer Siddique}, Y. Cao. ``Symbolic Policy Distillation for Interpretable Reinforcement Learning.'' \textit{Mechanistic Interpretability Workshop at NeurIPS}, 2025.
+    \item C. Wallace, \textbf{Umer Siddique}, Y. Cao. ``RECOLLAB: Retrieval-Augmented LLMs for Cooperative Ad-hoc Teammate Modeling.'' \textit{Bridging Language, Agent, and World Models Workshop at NeurIPS}, 2025.
+    \item J. Cofield, \textbf{Umer Siddique}, Y. Cao. ``MODIFLY: A Scalable End-to-end Multi-Agent Simulation for Unmanned Aerial Vehicles.'' \textit{26th International Workshop on Multi-Agent-Based Simulation (MABS)}, 2025.
+    \item \textbf{Umer Siddique}, P. Li, Y. Cao. ``Towards Fair and Efficient Policy Learning in Cooperative Multi-Agent Reinforcement Learning.'' \textit{AAMAS} [Extended Abstract], 2025.
+    \item \textbf{Umer Siddique}, P. Li, Y. Cao. ``Fairness in Traffic Control: Decentralized Multi-agent Reinforcement Learning with Generalized Gini Welfare Functions.'' \textit{Multi-Agent RL for Transportation Autonomy Workshop at AAMAS}, 2025.
+    \item C. Wallace, \textbf{Umer Siddique}, Y. Cao. ``Opponent Transformer: Modeling Opponent Policies as a Sequence Problem.'' \textit{Coordination and Cooperation for Multi-Agent RL at RLC}, 2024.
+    \item \textbf{Umer Siddique}, P. Li, Y. Cao. ``Towards Fair and Equitable Policy Learning in Cooperative Multi-Agent Reinforcement Learning.'' \textit{Coordination and Cooperation for Multi-Agent RL Workshop at RLC}, 2024.
+    \item \textbf{Umer Siddique}, A. Sinha, Y. Cao. ``Fairness in Preference-based Reinforcement Learning.'' \textit{The Many Facets of Preference-Based Learning Workshop at ICML}, 2023.
+    \item G. Yu, \textbf{Umer Siddique}, P. Weng. ``Fair Deep Reinforcement Learning with Generalized Gini Welfare Functions.'' \textit{Adaptive Learning Agents (ALA) Workshop at AAMAS}, 2023. \textbf{(Best Paper Award)}
+\end{publist}
+
+%--------------------TEACHING-----------------------------------
+\section*{Teaching Experience}
+
+\textbf{Lecturer, Computer Science}, Government College Satiana Road, Faisalabad, Pakistan \hfill \textit{2017--2018}\\
+Instructor of record for Introduction to Computer Science, Databases, and Programming.
+
+\textbf{Lecturer (Part-time)}, Lyallpur International College, Faisalabad, Pakistan \hfill \textit{2016}\\
+Instructor for Computing, Calculus I, Discrete Mathematics, and Python Programming.
+
+\textbf{Seminar and Tutorial Organizer}, University of Texas at San Antonio \hfill \textit{2022--Present}\\
+Organize and deliver research seminars and hands-on tutorials on RL, RLHF, and AI alignment.
+
+% \subsection*{Courses Prepared to Teach}
+% Reinforcement Learning; Machine Learning; Deep Learning; Artificial Intelligence; Multi-Agent Systems; AI Safety and Alignment; Optimization for Machine Learning; Programming and Data Structures.
+
+%--------------------MENTORING-----------------------------------
+\section*{Research Mentoring and Advising}
+\begin{cvlist}
+    \item \textbf{Jeremy Cofield} (Undergraduate, UTSA). Mentored through his first research project on multi-agent UAV simulation, from initial design to publication. Resulted in a first-authored MABS 2025 paper (MODIFLY) and a pending U.S.\ patent. Now at SpaceX.
+    \item \textbf{Sergio DeLeon Jr.} (Undergraduate, UTSA). Mentored on the design of water-based multi-agent simulation environments for RL. Now at Raytheon.
+    \item \textbf{Peilang Li} (PhD student, UTSA). Mentored on interpretable RL, guiding problem formulation, experimental design, and paper development. Resulted in co-authored papers at RLC 2025 and the NeurIPS 2025 Mechanistic Interpretability Workshop, on which he is first author.
+\end{cvlist}
+
+%--------------------MEDIA-----------------------------------
+\section*{Media and Public Engagement}
+\begin{cvlist}
+    \item Interviewed for ``\href{https://specials.texasstandard.org/texas-ai-accessibility-threats/}{The New Wild West: Texans on the AI Frontier},'' \textit{Texas Standard} (Texas public radio), 2026. Discussed research at the UTSA Unmanned Systems Lab on training robots from failed and synthetic data so they generalize at test time to tasks they were not trained on.
+\end{cvlist}
+
+%--------------------INVITED TALKS & PRESENTATIONS-----------------------------------
+\section*{Conference Presentations}
+\begin{publist}[label={[T\arabic*]}]
+    \item ``Adaptive Event-triggered Policy Gradient for Multi-Agent Reinforcement Learning.'' American Control Conference (ACC), 2026.
+    \item ``Deep Reinforcement Learning for Target Enclosing Under Limited Sensing.'' AIAA SCITECH, 2026.
+    \item ``Adaptive Event-triggered Reinforcement Learning Control for Complex Nonlinear Systems.'' American Control Conference (ACC), 2025.
+    \item ``Fairness in Multi-Objective Reinforcement Learning.'' Adaptive Learning Agents Workshop at AAMAS, 2025.
+    \item ``Multi-Agent Reinforcement Learning for Traffic Light Control.'' Multi-Agent RL for Transportation Autonomy Workshop at AAMAS, 2025.
+    \item ``Reinforcement Learning for Target Capture Autonomous Guidance.'' AIAA SCITECH, 2024.
+    \item Navy CAST Program Review presentations, Office of Naval Research, 2023, 2024, 2025, 2026.
+\end{publist}
+
+%--------------------SERVICE-----------------------------------
+\section*{Professional Service}
+
+% \subsection*{Organizing}
+% \begin{cvlist}
+%     \item Workshop Co-chair, \textit{Good Data for Generative AI}, AAAI 2025.
+% \end{cvlist}
+
+\subsection*{Conference Reviewing}
+
+NeurIPS (2024--2026) · ICML (2023--2026; Gold Reviewer, 2026) · ICLR (2024--2026) · AAAI (2024--2026) · AISTATS (2025) · IJCAI (2024--2025) · ECAI (2024--2025) · IROS (2024)
+
+\subsection*{Journal Reviewing}
+\textit{Automatica} · \textit{IEEE Transactions on Cybernetics} · \textit{Neural Computing and Applications}
+
+%--------------------SCHOLARSHIPS-----------------------------------
+\section*{Scholarships and Early Honors}
+\begin{cvlist}
+    \item \textbf{Fully Funded PhD Scholarship}, University of Texas at San Antonio, 2022--Present. Supported by ONR, ARL, and ARO.
+    \item \textbf{Fully Funded Master's Scholarship}, UM--SJTU Joint Institute, 2018--2021. Chinese Government Scholarship program.
+    \item \textbf{Excellence International Student Award}, UM--SJTU Joint Institute, 2018.
+    \item \textbf{Gold Medalist}, BS in Information Technology, University of Agriculture Faisalabad, 2017.
+    \item \textbf{Young Motivational Teacher Award}, Government College Satiana Road, Faisalabad, 2018.
+    \item \textbf{University Merit-Based Scholarship}, University of Agriculture Faisalabad, 2013--2017.
+    \item \textbf{Higher Education Commission (HEC) Merit and Need-Based Scholarship}, Pakistan, 2014--2017.
+\end{cvlist}
+
+%--------------------REFERENCES-----------------------------------
+\section*{References}
+
+\textbf{Prof.\ Yongcan Cao} \\
+Professor, Department of Electrical and Computer Engineering, UT San Antonio \\
+\href{mailto:yongcan.cao@utsa.edu}{yongcan.cao@utsa.edu}
+
+\textbf{Prof.\ Paul Weng}  \\
+Associate Professor, Duke Kunshan University \\
+\href{mailto:paul.weng@dukekunshan.edu.cn}{paul.weng@dukekunshan.edu.cn}
+
+\textbf{Dr.\ Abhinav Sinha} \\
+Assistant Professor, Department of Aerospace Engineering, University of Cincinnati \\
+\href{mailto:sinhaab@ucmail.uc.edu}{sinhaab@ucmail.uc.edu}
+
+\textbf{Prof.\ Chunjiang Qian} \\
+Professor, Department of Electrical and Computer Engineering, UT San Antonio \\
+\href{mailto:chunjiang.qian@utsa.edu}{chunjiang.qian@utsa.edu}
+
+\end{document}

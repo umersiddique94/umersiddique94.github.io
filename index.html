@@ -1,0 +1,52 @@
+---
+layout: default
+title: About
+---
+<header class="post-header">
+  <h1 class="post-title"><span class="fw-bold">{{ site.first_name }}</span> {{ site.last_name }}</h1>
+  <p class="desc">{{ site.position }}</p>
+</header>
+
+<article class="about">
+  <div class="profile">
+    <img src="{{ '/assets/img/profile.png' | relative_url }}" alt="Photo of {{ site.title }}" width="460" height="460">
+  </div>
+
+  <div class="bio">
+    <p>
+      I am a final-year PhD candidate in the
+      <a href="https://utsausl.wixsite.com/utsausl">Unmanned Systems Lab</a> at UT San Antonio, advised by
+      <a href="https://klesse.utsa.edu/faculty/profiles/cao-yongcan.html">Prof. Yongcan Cao</a>.
+      My research is on <strong>AI alignment through reinforcement learning</strong>: building
+      decision-making systems that are fair, safe, and aligned with the people they affect.
+      I work on multi-objective and preference-based RL, multi-agent systems, and inference-time
+      alignment, often using social welfare functions such as the Generalized Gini Function to
+      balance efficiency and equity. My work is supported by the Office of Naval Research and the
+      Army Research Laboratory.
+    </p>
+    <p>
+      Before UTSA, I received my MS from the UM&ndash;SJTU Joint Institute in Shanghai, where I worked
+      with Prof. Paul Weng on fairness in reinforcement learning.
+    </p>
+    {% include social.html %}
+  </div>
+</article>
+
+<section class="section">
+  <h2><a href="{{ '/news/' | relative_url }}">News</a></h2>
+  <table class="news">
+    {% for n in site.data.news limit: site.news_limit %}
+    <tr><th scope="row">{{ n.date }}</th><td>{{ n.text }}</td></tr>
+    {% endfor %}
+  </table>
+  <p class="more"><a href="{{ '/news/' | relative_url }}">All news &rarr;</a></p>
+</section>
+
+<section class="section">
+  <h2><a href="{{ '/publications/' | relative_url }}">Selected Publications</a></h2>
+  <ol class="pubs">
+    {% assign selected = site.data.papers | where_exp: "p", "p.selected" | sort: "selected" %}
+    {% for p in selected %}{% include pub.html p=p %}{% endfor %}
+  </ol>
+  <p class="more"><a href="{{ '/publications/' | relative_url }}">All publications &rarr;</a></p>
+</section>

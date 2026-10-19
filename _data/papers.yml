@@ -1,0 +1,458 @@
+# Publications shown on the website.
+# type: preprint | journal | conference | workshop | patent
+# selected: N  -> also shown on the home page, ordered by N
+# img: file in assets/img/papers/ (omit to show a venue tile instead)
+# links: any label -> URL (rendered as buttons)
+
+- key: siddique2026safety
+  type: preprint
+  year: 2026
+  abbr: Preprint
+  title: Inference-Time Safety Alignment for Reinforcement Learning
+  authors:
+  - Umer Siddique
+  - Peilang Li
+  - Yongcan Cao
+  venue: Under review
+- key: li2026spid
+  type: preprint
+  year: 2026
+  abbr: Preprint
+  title: 'SPID: Fidelity-Preserving Symbolic Policy Distillation for Interpretable Reinforcement Learning'
+  authors:
+  - Peilang Li
+  - Umer Siddique
+  - Yongcan Cao
+  venue: Under review
+- key: li2026autointerp
+  type: preprint
+  year: 2026
+  abbr: Preprint
+  title: Automated Interpretability for Diagnosing Reinforcement Learning Failures
+  authors:
+  - Peilang Li
+  - Umer Siddique
+  - Yongcan Cao
+  venue: Under review
+- key: wallace2026bayestom
+  type: preprint
+  year: 2026
+  abbr: Preprint
+  title: 'BayesToM: Retrieval-Augmented Behavior Models for Calibrated Partner Identification'
+  authors:
+  - Conor Wallace
+  - Umer Siddique
+  - Yongcan Cao
+  - Peilang Li
+  venue: Under review
+- key: siddique2025fpbrl
+  type: journal
+  year: 2025
+  abbr: MLJ
+  selected: 3
+  title: Learning Fair Policies in Multi-Objective Preference-based Reinforcement Learning
+  authors:
+  - Umer Siddique
+  - Abhinav Sinha
+  - Yongcan Cao
+  venue: Machine Learning (Springer)
+  img: mlj2025-fpbrl.png
+  links:
+    Paper: https://doi.org/10.1007/s10994-025-06959-y
+- key: siddique2025traffic
+  type: journal
+  year: 2025
+  abbr: JATS
+  title: Fair Multi-Agent Reinforcement Learning for Traffic Control
+  authors:
+  - Umer Siddique
+  - Peilang Li
+  - Yongcan Cao
+  venue: ACM Journal on Autonomous Transportation Systems
+  img: traffic-fair-marl.png
+  links:
+    Paper: https://doi.org/10.1145/3749378
+- key: qian2025compromise
+  type: journal
+  year: 2025
+  abbr: NCAA
+  title: From Fair Solutions to Compromise Solutions in Multi-Objective Deep Reinforcement Learning
+  authors:
+  - Junqi Qian
+  - Umer Siddique
+  - Guanbao Yu
+  - Paul Weng
+  venue: Neural Computing and Applications
+  img: ncaa2025-compromise.jpg
+  abstract: In this paper, we focus on multi-objective reinforcement learning (RL) where the expected vector returns are aggregated with a concave function. For this generic framework, which includes notably fair optimization in the multi-user setting and compromise optimization in the multi-criteria setting, we present several contributions. After a discussion of its theoretical properties (e.g., need to resort to stochastic policies), we prove a general performance bound that justifies learning a policy using discounted rewards, even if a policy optimal for the average reward is desired. We extend several deep RL algorithms for our problem, notably our adaptation of DQN can learn stochastic policies. In addition, to illustrate the generality of our framework, we consider in the multi-user setting a novel extension of fair optimization in deep RL where users have different entitlements. Our experimental results validate our propositions and also demonstrate its superiority to reward engineering
+    in single-objective RL.
+  links:
+    Paper: https://doi.org/10.1007/s00521-024-10602-7
+- key: abahussein2023food
+  type: journal
+  year: 2023
+  abbr: Information
+  title: Multi-Agent Reinforcement Learning for Online Food Delivery with Location Privacy Preservation
+  authors:
+  - Suleiman Abahussein
+  - Dayong Ye
+  - Congcong Zhu
+  - Zishuo Cheng
+  - Umer Siddique
+  - Sheng Shen
+  venue: Information (MDPI)
+  img: info2023-food-delivery.jpg
+  links:
+    Paper: https://doi.org/10.3390/info14110597
+- key: siddique2026inference
+  type: conference
+  year: 2026
+  abbr: RLC
+  selected: 1
+  title: Inference-Time Policy Alignment for Fair Reinforcement Learning
+  authors:
+  - Umer Siddique
+  - Peilang Li
+  - Conor Wallace
+  - Yongcan Cao
+  venue: Reinforcement Learning Conference (RLC)
+  img: rlc2026-inference-fair.png
+  abstract: Deep reinforcement learning (RL) agents achieve strong performance by optimizing scalar reward functions. However, once deployed, the policies of these RL agents are often rigid and costly to adapt to new performance criteria. For instance, an agent trained to maximize expected cumulative reward may not accommodate previously unknown stakeholder preferences. Existing approaches to achieve fairness, a type of preference, in RL typically assume that such preferences are known a priori and require complete retraining of the policy under a fairness-oriented metric. Inspired by inference-time alignment in large language models, we investigate the problem of steering a pretrained RL policy toward welfare-based fairness objectives at inference time without updating the base policy's parameters. We formalize inference-time fairness alignment as a policy shaping problem and propose a multiplicative policy shaping framework that adjusts action probabilities using action-dependent welfare
+    scores, thus requiring no modification to the base policy. Our framework is general and compatible with any deep RL agent. Through extensive experiments across multiple domains, we demonstrate that inference-time policy shaping substantially improves welfare-based fairness objectives while preserving core task performance.
+  links:
+    arXiv: https://arxiv.org/abs/2608.00175
+    OpenReview: https://openreview.net/forum?id=hK3PNEnbNf
+- key: siddique2026eventmarl
+  type: conference
+  year: 2026
+  abbr: ACC
+  selected: 2
+  title: Adaptive Event-Triggered Policy Gradient for Multi-Agent Reinforcement Learning
+  authors:
+  - Umer Siddique
+  - Abhinav Sinha
+  - Yongcan Cao
+  venue: American Control Conference (ACC)
+  img: acc2026-event-marl.png
+  abstract: Conventional multi-agent reinforcement learning (MARL) methods rely on time-triggered execution, where agents sample and communicate actions at fixed intervals. This approach is often computationally expensive and communication-intensive. To address this limitation, we propose ET-MAPG (Event-Triggered Multi-Agent Policy Gradient reinforcement learning), a framework that jointly learns an agent's control policy and its event-triggering policy. Unlike prior work that decouples these mechanisms, ET-MAPG integrates them into a unified learning process, enabling agents to learn not only what action to take but also when to execute it. For scenarios with inter-agent communication, we introduce AET-MAPG, an attention-based variant that leverages a self-attention mechanism to learn selective communication patterns. AET-MAPG empowers agents to determine not only when to trigger an action but also with whom to communicate and what information to exchange, thereby optimizing coordination.
+    Both methods can be integrated with any policy gradient MARL algorithm. Extensive experiments across diverse MARL benchmarks demonstrate that our approaches achieve performance comparable to state-of-the-art, time-triggered baselines while significantly reducing both computational load and communication overhead.
+  links:
+    arXiv: https://arxiv.org/abs/2509.20338
+- key: siddique2026enclosing
+  type: conference
+  year: 2026
+  abbr: AIAA
+  title: Deep Reinforcement Learning for Target Enclosing Under Limited Sensing and Autopilot Lag
+  authors:
+  - Umer Siddique
+  - Praveen Kumar Ranjan
+  - Abhinav Sinha
+  - Yongcan Cao
+  venue: AIAA SciTech Forum
+  abstract: 'This paper proposes a deep reinforcement learning (RL) based solution for the target enclosing problem using a non-holonomic unmanned aerial vehicle (UAV) operating under limited sensing and control lag. Instead of using the mathematical or analytical controllers, our approach enables an end-to-end learning-based agent to autonomously interact with the environment and develop enclosing strategies that ensure safety and containment around a stationary target. A carefully designed reward function guides the learning agent by combining three reward components: a quadratic distance-based reward penalizing deviation from the desired enclosing radius, a state-dependent velocity reward that promotes stability during radial transitions, and an acceleration penalty to enforce a smooth trajectory. Thus, the agent learns to trade off between maintaining an optimal enclosing geometry and mitigating aggressive control responses, especially in the presence of autopilot lag. Our results demonstrate
+    that the learned policy through our carefully designed reward function achieves reliable target enclosing performance while matching or outperforming the analytical controllers.'
+- key: manzoor2026media
+  type: conference
+  year: 2026
+  abbr: ACL
+  title: 'A Multi-View Media Profiling Suite: Resources, Evaluation, and Analysis'
+  authors:
+  - Muhammad Arslan Manzoor
+  - Dilshod Azizov
+  - Daniil Orel
+  - Umer Siddique
+  - Zain Muhammad Mujahid
+  - Yufang Hou
+  - Preslav Nakov
+  venue: Annual Meeting of the Association for Computational Linguistics (ACL)
+  img: acl2026-media-profiling.png
+  abstract: News outlets shape public opinion at a scale that makes automated detection of political bias and factuality essential. However, the field still lacks unified resources, comprehensive evaluations across diverse approaches, and systematic analyses of the representations and fusion strategies that matter most, especially under label sparsity and dataset diversity. In addition, there is little empirical work reporting broad, observation-driven findings about what consistently works, what fails, and why. We address these gaps through four main contributions. First, we introduce MBFC-2025, a large-scale label set covering approximately 2,600 outlets from Media Bias/Fact Check (MBFC). Second, we construct multiview representations for ACL-2020 (Panayotov et al., 2022), which includes around 900 outlets, as well as for MBFC-2025. These representations span Alexa graphs, hyperlink graphs, LLM-derived graphs, articles, and Wikipedia descriptions. Third, we provide a systematic evaluation
+    and analysis of embedding views and fusion strategies, including a reinforcement learning-based fusion variant. Fourth, we conduct extensive experiments that achieve state-of-the-art results on ACL-2020 and establish strong benchmarks on MBFC-2025.
+  links:
+    arXiv: https://arxiv.org/abs/2605.01336
+- key: siddique2025pareto
+  type: conference
+  year: 2025
+  abbr: RLC
+  selected: 4
+  title: Learning Fair Pareto-Optimal Policies in Multi-Objective Reinforcement Learning
+  authors:
+  - Umer Siddique
+  - Peilang Li
+  - Yongcan Cao
+  venue: Reinforcement Learning Conference (RLC)
+  img: rlc2025-fair-pareto.png
+  abstract: 'Fairness is an important aspect of decision-making in multi-objective reinforcement learning (MORL), where policies must ensure both optimality and equity across multiple, potentially conflicting objectives. While single-policy MORL methods can learn fair policies for fixed user preferences using welfare functions such as the generalized Gini welfare function (GGF), they fail to provide the diverse set of policies necessary for dynamic or unknown user preferences. To address this limitation, we formalize the fair optimization problem in multi-policy MORL, where the goal is to learn a set of Pareto-optimal policies that ensure fairness across all possible user preferences. Our key technical contributions are threefold: (1) We show that for concave, piecewise-linear welfare functions (e.g., GGF), fair policies remain in the convex coverage set (CCS), which is an approximated Pareto front for linear scalarization. (2) We demonstrate that non-stationary policies, augmented with
+    accrued reward histories, and stochastic policies improve fairness by dynamically adapting to historical inequities. (3) We propose three novel algorithms, which include integrating GGF with multi-policy multi-objective Q-Learning (MOQL), state-augmented multi-policy MOQL for learning non-statoinary policies, and its novel extension for learning stochastic policies. We evaluate our algorithms across various domains and compare our methods against the state-of-the-art MORL baselines. The empirical results show that our methods learn a set of fair policies that accommodate different user preferences.'
+  links:
+    PDF: https://rlj.cs.umass.edu/2025/papers/RLJ_RLC_2025_350.pdf
+    arXiv: https://arxiv.org/abs/2606.18111
+- key: li2025interpretability
+  type: conference
+  year: 2025
+  abbr: RLC
+  title: 'From Explainability to Interpretability: Interpretable Reinforcement Learning Via Model Explanations'
+  authors:
+  - Peilang Li
+  - Umer Siddique
+  - Yongcan Cao
+  venue: Reinforcement Learning Conference (RLC)
+  img: rlc2025-interpretability.jpg
+  abstract: 'Deep reinforcement learning (RL) has shown remarkable success in complex domains, however, the inherent black box nature of deep neural network policies raises significant challenges in understanding and trusting the decision-making processes. While existing explainable RL methods provide local insights, they fail to deliver a global understanding of the model, particularly in high-stakes applications. To overcome this limitation, we propose a novel model-agnostic approach that bridges the gap between explainability and interpretability by leveraging Shapley values to transform complex deep RL policies into transparent representations. The proposed approach offers two key contributions: a novel approach employing Shapley values to policy interpretation beyond local explanations and a general framework applicable to off-policy and on-policy algorithms. We evaluate our approach with three existing deep RL algorithms and validate its performance in two classic control environments.
+    The results demonstrate that our approach not only preserves the original models'' performance but also generates more stable interpretable policies.'
+  links:
+    PDF: https://rlj.cs.umass.edu/2025/papers/RLJ_RLC_2025_253.pdf
+    arXiv: https://arxiv.org/abs/2501.09858
+- key: wallace2025transam
+  type: conference
+  year: 2025
+  abbr: RLC
+  title: 'TransAM: Transformer-Based Agent Modeling for Multi-Agent Systems via Local Trajectory Encoding'
+  authors:
+  - Conor Wallace
+  - Umer Siddique
+  - Yongcan Cao
+  venue: Reinforcement Learning Conference (RLC)
+  img: rlc2025-transam.png
+  abstract: Agent modeling is a critical component in developing effective policies within multi-agent systems, as it enables agents to form beliefs about the behaviors, intentions, and competencies of others. Many existing approaches assume access to other agents' episodic trajectories, a condition often unrealistic in real-world applications. Consequently, a practical agent modeling approach must learn a robust representation of the policies of the other agents based only on the local trajectory of the controlled agent. In this paper, we propose \texttt{TransAM}, a novel transformer-based agent modeling approach to encode local trajectories into an embedding space that effectively captures the policies of other agents. We evaluate the performance of the proposed method in cooperative, competitive, and mixed multi-agent environments. Extensive experimental results demonstrate that our approach generates strong policy representations, improves agent modeling, and leads to higher episodic
+    returns.
+  links:
+    PDF: https://rlj.cs.umass.edu/2025/papers/RLJ_RLC_2025_275.pdf
+    arXiv: https://arxiv.org/abs/2508.02826
+- key: siddique2025eventrl
+  type: conference
+  year: 2025
+  abbr: ACC
+  title: Adaptive Event-triggered Reinforcement Learning Control for Complex Nonlinear Systems
+  authors:
+  - Umer Siddique
+  - Abhinav Sinha
+  - Yongcan Cao
+  venue: American Control Conference (ACC)
+  img: acc2025-event-rl.png
+  abstract: In this paper, we propose an adaptive event-triggered reinforcement learning control for continuous-time nonlinear systems, subject to bounded uncertainties, characterized by complex interactions. Specifically, the proposed method is capable of jointly learning both the control policy and the communication policy, thereby reducing the number of parameters and computational overhead when learning them separately or only one of them. By augmenting the state space with accrued rewards that represent the performance over the entire trajectory, we show that accurate and efficient determination of triggering conditions is possible without the need for explicit learning triggering conditions, thereby leading to an adaptive non-stationary policy. Finally, we provide several numerical examples to demonstrate the effectiveness of the proposed approach.
+  links:
+    arXiv: https://arxiv.org/abs/2409.19769
+- key: siddique2024capture
+  type: conference
+  year: 2024
+  abbr: AIAA
+  title: On Deep Reinforcement Learning for Target Capture Autonomous Guidance
+  authors:
+  - Umer Siddique
+  - Abhinav Sinha
+  - Yongcan Cao
+  venue: AIAA SciTech Forum
+  abstract: This paper explores the prospects of motion planning of autonomous vehicles using deep reinforcement learning (DRL). We are particularly interested in a goal-directed setting where the need is to design an optimal guidance strategy for a pursuing autonomous vehicle (the pursuer, which is also the DRL agent) to capture an adversary (the target). To this end, we first formulate the target capture guidance problem as a Markov Decision Process (MDP) wherein the kinematics of relative motion between the vehicles constitute the MDP, and the pursuer's lateral acceleration (chosen as its steering control to account for turn constraints) is the action of DRL agent. We show that a multifaceted reward function motivated by the collision conditions is sufficient and effective in designing the reinforcement learning action that enables the pursuer to capture the target regardless of the latter's motion. We then empirically evaluate the performance of the trained agent in various target capture
+    scenarios.
+  links:
+    Paper: https://arc.aiaa.org/doi/10.2514/6.2024-0957
+- key: yu2023preferential
+  type: conference
+  year: 2023
+  abbr: ECAI
+  title: Fair Deep Reinforcement Learning with Preferential Treatment
+  authors:
+  - Guanbao Yu
+  - Umer Siddique
+  - Paul Weng
+  venue: European Conference on Artificial Intelligence (ECAI)
+  abstract: 'Learning fair policies in reinforcement learning (RL) is important when the RL agent may impact many users. We investigate a variant of this problem where equity is still desired, but some users may be entitled to preferential treatment. In this paper, we formalize this more sophisticated fair optimization problem in deep RL using generalized fair social welfare functions (SWF), provide a theoretical discussion to justify our approach, explain how deep RL algorithms can be adapted to tackle it, and empirically validate our propositions on several domains. Our contributions are both theoretical and algorithmic, notably: (1) We obtain a general bound on the suboptimality gap in terms of SWF-optimality using average reward of a policy SWF-optimal for the discounted reward, which notably justifies using standard deep RL algorithms, even for the average reward; (2) Our algorithmic innovations include a state-augmented DQN-based method for learning either deterministic or stochastic
+    policies, which also applies to the usual fair optimization setting without any preferential treatment'
+  links:
+    Paper: https://ebooks.iospress.nl/doi/10.3233/FAIA230606
+- key: zimmer2021soto
+  type: conference
+  year: 2021
+  abbr: ICML
+  selected: 5
+  title: Learning Fair Policies in Decentralized Cooperative Multi-Agent Reinforcement Learning
+  authors:
+  - Matthieu Zimmer
+  - Claire Glanois
+  - Umer Siddique
+  - Paul Weng
+  venue: International Conference on Machine Learning (ICML)
+  img: icml2021-soto.png
+  abstract: 'We consider the problem of learning fair policies in (deep) cooperative multi-agent reinforcement learning (MARL). We formalize it in a principled way as the problem of optimizing a welfare function that explicitly encodes two important aspects of fairness: efficiency and equity. As a solution method, we propose a novel neural network architecture, which is composed of two sub-networks specifically designed for taking into account the two aspects of fairness. In experiments, we demonstrate the importance of the two sub-networks for fair optimization. Our overall approach is general as it can accommodate any (sub)differentiable welfare function. Therefore, it is compatible with various notions of fairness that have been proposed in the literature (e.g., lexicographic maximin, generalized Gini social welfare function, proportional fairness). Our solution method is generic and can be implemented in various MARL settings: centralized training and decentralized execution, or fully
+    decentralized. Finally, we experimentally validate our approach in various domains and show that it can perform much better than previous methods.'
+  links:
+    PMLR: https://proceedings.mlr.press/v139/zimmer21a.html
+    arXiv: https://arxiv.org/abs/2012.09421
+- key: siddique2020fair
+  type: conference
+  year: 2020
+  abbr: ICML
+  selected: 6
+  title: Learning Fair Policies in Multi-Objective (Deep) Reinforcement Learning with Average and Discounted Rewards
+  authors:
+  - Umer Siddique
+  - Paul Weng
+  - Matthieu Zimmer
+  venue: International Conference on Machine Learning (ICML)
+  img: icml2020-fair-drl.png
+  abstract: 'As the operations of autonomous systems generally affect simultaneously several users, it is crucial that their designs account for fairness considerations. In contrast to standard (deep) reinforcement learning (RL), we investigate the problem of learning a policy that treats its users equitably. In this paper, we formulate this novel RL problem, in which an objective function, which encodes a notion of fairness that we formally define, is optimized. For this problem, we provide a theoretical discussion where we examine the case of discounted rewards and that of average rewards. During this analysis, we notably derive a new result in the standard RL setting, which is of independent interest: it states a novel bound on the approximation error with respect to the optimal average reward of that of a policy optimal for the discounted reward. Since learning with discounted rewards is generally easier, this discussion further justifies finding a fair policy for the average reward
+    by learning a fair policy for the discounted reward. Thus, we describe how several classic deep RL algorithms can be adapted to our fair optimization problem, and we validate our approach with extensive experiments in three different domains.'
+  links:
+    PMLR: https://proceedings.mlr.press/v119/siddique20a.html
+    arXiv: https://arxiv.org/abs/2008.07773
+    Talk: https://slideslive.com/38928455/learning-fair-policies-in-multiobjective-deep-reinforcement-learning-with-average-and-discounted-rewards
+- key: siddique2026vla
+  type: workshop
+  year: 2026
+  abbr: CoRL W
+  title: 'Right Goal, Wrong Body: Re-grounding Frozen VLAs under Actuation Shift'
+  authors:
+  - Umer Siddique
+  - Peilang Li
+  - Yongcan Cao
+  venue: Workshop on The Science of Physical AI Safety, CoRL
+- key: siddique2026rubric
+  type: workshop
+  year: 2026
+  abbr: COLM W
+  title: 'Beyond the Weighted Sum: Rubric Aggregation for Multi-Criterion LLM Alignment'
+  authors:
+  - Umer Siddique
+  - Peilang Li
+  - Yongcan Cao
+  venue: Workshop on Agent Behavior, COLM
+- key: li2025spid
+  type: workshop
+  year: 2025
+  abbr: NeurIPS W
+  title: Symbolic Policy Distillation for Interpretable Reinforcement Learning
+  authors:
+  - Peilang Li
+  - Umer Siddique
+  - Yongcan Cao
+  venue: Mechanistic Interpretability Workshop, NeurIPS
+  abstract: Deep reinforcement learning (RL) policies based on deep neural networks (DNNs) achieve strong performance but are often opaque, hindering transparency, interpretability, and safe deployment. Interpretable policy distillation seeks to transfer knowledge from these black-box DNN policies into simpler, human-understandable forms. While prior work has extensively studied performance retention, fidelity to the original DNN policies has remained underexplored, which is crucial for ensuring that the distilled policies faithfully capture the underlying decision-making logic. To address this gap, we propose GM-DAGGER, a novel data aggregation method that employs a geometric mean loss to preserve fidelity without compromising performance. Building on this, we introduce Symbolic Policy Interpretable Distillation (SPID), a framework that distills DNN policies into symbolic analytical equations via symbolic regression. Through extensive experiments across six environments and five deep RL
+    algorithms, we show that SPID achieves superior preservation of both performance and fidelity, while providing interpretable policies that provide mechanistic insights into policy behavior and training dynamics.
+- key: wallace2025recollab
+  type: workshop
+  year: 2025
+  abbr: NeurIPS W
+  title: 'ReCollab: Retrieval-Augmented LLMs for Cooperative Ad-hoc Teammate Modeling'
+  authors:
+  - Conor Wallace
+  - Umer Siddique
+  - Yongcan Cao
+  venue: Bridging Language, Agent, and World Models Workshop (LAW), NeurIPS
+  img: neurips2025-recollab.png
+  abstract: 'Ad-hoc teamwork (AHT) requires agents to infer the behavior of previously unseen teammates and adapt their policy accordingly. Conventional approaches often rely on fixed probabilistic models or classifiers, which can be brittle under partial observability and limited interaction. Large language models (LLMs) offer a flexible alternative: by mapping short behavioral traces into high-level hypotheses, they can serve as world models over teammate behavior. We introduce \Collab, a language-based framework that classifies partner types using a behavior rubric derived from trajectory features, and extend it to \ReCollab, which incorporates retrieval-augmented generation (RAG) to stabilize inference with exemplar trajectories. In the cooperative Overcooked environment, \Collab effectively distinguishes teammate types, while \ReCollab consistently improves adaptation across layouts, achieving Pareto-optimal trade-offs between classification accuracy and episodic return. These findings
+    demonstrate the potential of LLMs as behavioral world models for AHT and highlight the importance of retrieval grounding in challenging coordination settings.'
+  links:
+    arXiv: https://arxiv.org/abs/2512.22129
+- key: cofield2025modifly
+  type: workshop
+  year: 2025
+  abbr: MABS
+  title: 'MODIFLY: A Scalable End-to-end Multi-Agent Simulation for Unmanned Aerial Vehicles'
+  authors:
+  - Jeremy Cofield
+  - Umer Siddique
+  - Yongcan Cao
+  venue: International Workshop on Multi-Agent-Based Simulation (MABS)
+  abstract: Multi-agent unmanned aerial vehicle (UAV) systems have emerged as a promising solution for complex applications such as industrial automation, surveillance, and disaster response. However, the application of multi-agent UAV coordination remains challenging due to the lack of consideration of real-world constraints such as communication link degradation, scalability issues, and the need for realistic training environments. Existing simulation platforms often lack the fidelity and flexibility required to bridge the gap between simulation and deployment. To address these limitations, we propose MODIFLY, a scalable, cross-platform, end-to-end simulation platform tailored for multi-agent UAV control. MODIFLY introduces dynamic communication modeling, including link degradation, to accurately simulate real-world UAV operations. It supports distributed execution across multiple UAVs, seamless coordination, real-time monitoring, and user input capture. MODIFLY uniquely integrates real
+    drones with virtual environments, allowing UAVs to interact with simulated obstacles and peer ones for hybrid reality testing. Additionally, the platform is designed to facilitate reinforcement learning (RL) research by providing compatibility with popular libraries like OpenAI Gym and PettingZoo, supporting both single-agent and multi-agent RL environments. MODIFLY offers an intuitive interface for real-time parameter tuning and performance analysis, making it a versatile tool for researchers and practitioners to develop and validate UAV coordination strategies under realistic conditions.
+  links:
+    Paper: https://link.springer.com/chapter/10.1007/978-3-032-16328-8_9
+    OpenReview: https://openreview.net/forum?id=EAUPxGTQ6C
+- key: siddique2025fappo
+  type: workshop
+  year: 2025
+  abbr: AAMAS
+  title: Towards Fair and Efficient Policy Learning in Cooperative Multi-Agent Reinforcement Learning
+  authors:
+  - Umer Siddique
+  - Peilang Li
+  - Yongcan Cao
+  venue: AAMAS (Extended Abstract)
+  img: aamas2025-fappo.png
+  abstract: In this paper, we consider the problem of learning independent fair policies in cooperative multi-agent reinforcement learning (MARL). Our objective is to design multiple policies simultaneously that optimize a welfare function for fairness. To achieve this objective, we propose a novel Fairness-Aware multi-agent Proximal Policy Optimization (FAPPO) algorithm, which enables each agent to independently learn its policy while optimizing a welfare function. Unlike standard approaches that focus on maximizing a performance metric such as rewards, FAPPO focuses on fairness in an independent learning setting, where each agent estimates its local value function. When inter-agent communication is allowed, we further introduce an attention-based variant of FAPPO (AT-FAPPO), which incorporates a self-attention mechanism to facilitate communication and coordination among agents. This variant allows agents to share relevant information during training, leading to more fair outcomes. To show
+    the effectiveness of the proposed methods, we conduct experiments in various environments and show that our approach outperforms existing methods both in terms of efficiency and equity.
+  links:
+    PDF: https://www.ifaamas.org/Proceedings/aamas2025/pdfs/p2744.pdf
+- key: siddique2025malta
+  type: workshop
+  year: 2025
+  abbr: AAAI W
+  title: 'Fairness in Traffic Control: Decentralized Multi-agent Reinforcement Learning with Generalized Gini Welfare Functions'
+  authors:
+  - Umer Siddique
+  - Peilang Li
+  - Yongcan Cao
+  venue: Multi-Agent RL for Transportation Autonomy (MALTA) Workshop, AAAI
+  img: traffic-fair-marl.png
+  abstract: 'In this paper, we address the issue of learning fair policies in decentralized cooperative multi-agent reinforcement learning (MARL), with a focus on traffic light control systems. We show that standard MARL methods that optimize the expected rewards often lead to unfair treatment across different intersections. To overcome this limitation, we aim to design control policies that optimize a generalized Gini welfare function that explicitly encodes two aspects of fairness: efficiency and equity. Specifically, we propose three novel adaptations of MARL baselines that enable agents to learn decentralized fair policies, where each agent estimates its local value function while contributing to welfare optimization. We validate our approaches through extensive experiments across six traffic control environments with varying complexities and traffic layouts. The results demonstrate that our proposed methods consistently outperform existing MARL approaches both in terms of efficiency
+    and equity.'
+  links:
+    OpenReview: https://openreview.net/forum?id=Y1wckpUjsd
+- key: wallace2024optrans
+  type: workshop
+  year: 2024
+  abbr: RLC W
+  title: 'Opponent Transformer: Modeling Opponent Policies as a Sequence Problem'
+  authors:
+  - Conor Wallace
+  - Umer Siddique
+  - Yongcan Cao
+  venue: Coordination and Cooperation for Multi-Agent RL Workshop (CoCoMARL), RLC
+  abstract: The ability of an agent to understand the intentions of others in a multi-agent system, also called opponent modeling, is critical for the design of effective local control policies. One main challenge is the unavailability of other agents' episodic trajectories at execution. To address the challenge, we propose a new approach that explicitly models the episodic trajectories of others. In particular, the proposed approach is to cast the opponent modeling problem as a sequence modeling problem via conditioning a transformer model on the sequence of the agent's local trajectory and predicting each opponent agent's trajectory. To evaluate the effectiveness of the proposed approach, we conduct experiments using a set of multi-agent environments that capture both cooperative and competitive payoff structures. The results show that the proposed method can provide better opponent modeling capabilities while achieving competitive or superior episodic returns.
+  links:
+    OpenReview: https://openreview.net/forum?id=qzOnyQiCAc
+- key: siddique2024fappo
+  type: workshop
+  year: 2024
+  abbr: RLC W
+  title: Towards Fair and Equitable Policy Learning in Cooperative Multi-Agent Reinforcement Learning
+  authors:
+  - Umer Siddique
+  - Peilang Li
+  - Yongcan Cao
+  venue: Coordination and Cooperation for Multi-Agent RL Workshop (CoCoMARL), RLC
+  img: rlc2024-fappo.jpg
+  abstract: In this paper, we consider the problem of learning independent fair policies in cooperative multi-agent reinforcement learning (MARL). The objective is to design multiple policies simultaneously that can optimize a welfare function for fairness. To achieve this objective, we propose a novel Fairness-Aware multi-agent Proximal Policy Optimization (FAPPO) algorithm, which learns individual policies for all agents separately and optimizes a welfare function to ensure fairness among them, in contrast to optimizing the discounted rewards. The proposed approach is shown to learn fair policies in the independent learning setting, where each agent estimates its local value function. When inter-agent communication is allowed, we further introduce an attention-based variant of FAPPO (AT-FAPPO) by incorporating a self-attention mechanism for inter-agent communication. This variant enables agents to communicate and coordinate their actions, potentially leading to more fair solutions by leveraging
+    the ability to share relevant information during training. To show the effectiveness of the proposed methods, we conduct experiments in two environments and show that our approach outperforms previous methods both in terms of efficiency and equity.
+  links:
+    OpenReview: https://openreview.net/forum?id=OC5aj4oVdL
+- key: siddique2023fpbrl
+  type: workshop
+  year: 2023
+  abbr: ICML W
+  title: Fairness in Preference-based Reinforcement Learning
+  authors:
+  - Umer Siddique
+  - Abhinav Sinha
+  - Yongcan Cao
+  venue: The Many Facets of Preference-Based Learning Workshop, ICML
+  img: icml2023-fpbrl.png
+  abstract: In this paper, we address the issue of fairness in preference-based reinforcement learning (PbRL) in the presence of multiple objectives. The main objective is to design control policies that can optimize multiple objectives while treating each objective fairly. Toward this objective, we design a new fairness-induced preference-based reinforcement learning or FPbRL. The main idea of FPbRL is to learn vector reward functions associated with multiple objectives via new welfare-based preferences rather than reward-based preference in PbRL, coupled with policy learning via maximizing a generalized Gini welfare function. Finally, we provide experiment studies on three different environments to show that the proposed FPbRL approach can achieve both efficiency and equity for learning effective and fair policies.
+  links:
+    arXiv: https://arxiv.org/abs/2306.09995
+- key: yu2023ggf
+  type: workshop
+  year: 2023
+  abbr: ALA
+  title: Fair Deep Reinforcement Learning with Generalized Gini Welfare Functions
+  authors:
+  - Guanbao Yu
+  - Umer Siddique
+  - Paul Weng
+  venue: Adaptive and Learning Agents (ALA) Workshop, AAMAS
+  award: Best Paper Award
+  img: ala2023-ggf.png
+  abstract: Learning fair policies in reinforcement learning (RL) is important when the RL agent’s actions may impact many users. In this paper, we investigate a generalization of this problem where equity is still desired, but some users may be entitled to preferential treatment. We formalize this more sophisticated fair optimization problem in deep RL, provide some theoretical discussion of its difficulties, and explain how existing deep RL algorithms can be adapted to tackle it. Our algorithmic innovations notably include a state-augmented DQN-based method for learning stochastic policies, which also applies to the usual fair optimization setting without any preferential treatment. We empirically validate our propositions and analyze the experimental results on several application domains.
+  links:
+    PDF: https://alaworkshop2023.github.io/papers/ALA2023_paper_34.pdf
+- key: cofield2026patent
+  type: patent
+  year: 2026
+  abbr: Patent
+  title: Scalable End-to-End Multi-Agent Simulation for Unmanned Vehicles
+  authors:
+  - Jeremy Cofield
+  - Umer Siddique
+  - Yongcan Cao
+  venue: U.S. Patent (pending)

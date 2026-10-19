@@ -1,0 +1,10 @@
+{% assign s = site.social %}
+<div class="social">
+  {% if s.email %}<a href="mailto:{{ s.email }}" title="Email"><i class="fa-solid fa-envelope"></i></a>{% endif %}
+  {% if s.scholar %}<a href="{{ s.scholar }}" title="Google Scholar" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i></a>{% endif %}
+  {% if s.github %}<a href="{{ s.github }}" title="GitHub" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>{% endif %}
+  {% if s.linkedin %}<a href="{{ s.linkedin }}" title="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>{% endif %}
+  {% if s.orcid %}<a href="{{ s.orcid }}" title="ORCID" target="_blank" rel="noopener"><i class="ai ai-orcid"></i></a>{% endif %}
+  {% if s.researchgate %}<a href="{{ s.researchgate }}" title="ResearchGate" target="_blank" rel="noopener"><i class="ai ai-researchgate"></i></a>{% endif %}
+  {% if site.cv_pdf %}<a href="{{ site.cv_pdf | relative_url }}" title="CV" target="_blank" rel="noopener" class="cv-link"><i class="ai ai-cv"></i></a>{% endif %}
+</div>

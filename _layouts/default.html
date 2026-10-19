@@ -1,31 +1,41 @@
----
-layout: compress
----
-
-{% include base_path %}
-
 <!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
-
-  <body>
-
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
-
-    {{ content }}
-
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
-      </footer>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+{% include head.html %}
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      {% if page.url != "/" %}
+      <a class="nav-brand" href="{{ '/' | relative_url }}"><span class="fw-bold">{{ site.first_name }}</span> {{ site.last_name }}</a>
+      {% else %}
+      <span></span>
+      {% endif %}
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+      <nav class="nav-links">
+        {% for item in site.nav %}
+          {% assign active = false %}
+          {% if item.url == page.url %}{% assign active = true %}{% endif %}
+          <a href="{{ item.url | relative_url }}" class="nav-link{% if active %} active{% endif %}"{% if item.url contains '.pdf' %} target="_blank" rel="noopener"{% endif %}>{{ item.title }}</a>
+        {% endfor %}
+        <button id="theme-toggle" class="theme-toggle" title="Toggle dark mode" aria-label="Toggle dark mode">
+          <i class="fa-solid fa-moon icon-moon"></i><i class="fa-solid fa-sun icon-sun"></i>
+        </button>
+      </nav>
     </div>
+  </header>
 
-    {% include scripts.html %}
+  <main class="container" role="main">
+    {{ content }}
+  </main>
 
-  </body>
+  <footer class="footer">
+    <div class="container">
+      &copy; {{ site.time | date: '%Y' }} {{ site.title }}. Last updated {{ site.time | date: '%B %Y' }}.
+    </div>
+  </footer>
+
+  <div id="lightbox" class="lightbox" hidden><img alt=""></div>
+  <script src="{{ '/assets/js/main.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
+</body>
 </html>

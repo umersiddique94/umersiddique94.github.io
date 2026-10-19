@@ -1,78 +1,54 @@
+# Newest first. The home page shows the first `news_limit` items (see _config.yml);
+# /news/ shows everything. `text` may contain HTML.
+- date: "Oct 2026"
+  text: 'Paper on re-grounding frozen VLAs under actuation shift accepted at the <a href="/publications/#siddique2026vla">CoRL 2026 Workshop on The Science of Physical AI Safety</a>.'
+- date: "Sep 2026"
+  text: 'Interviewed by <em>Texas Standard</em> for <a href="https://specials.texasstandard.org/texas-ai-accessibility-threats/">The New Wild West: Texans on the AI Frontier</a>.'
+- date: "Aug 2026"
+  text: 'Paper on rubric aggregation for multi-criterion LLM alignment accepted at the <a href="/publications/#siddique2026rubric">COLM 2026 Workshop on Agent Behavior</a>.'
+- date: "2026"
+  text: 'Serving as a reviewer for ICML, NeurIPS, COLM, CoRL, AAAI, AAMAS, and TMLR in 2026.'
 - date: "May 2026"
-  content: "Received the Gold Reviewer Award for ICML 2026."
+  text: 'Received the <strong>Gold Reviewer Award</strong> at ICML 2026.'
 - date: "May 2026"
-  content: "<a href='/publication/2026-RLC-Fairness'>Paper</a> accepted at RLC 2026."
-- date: "May 2026"
-  content: "Serving as a reviewer for NeurIPS (NIPS) 2026."
-- date: "April 2026"
-  content: "<a href='/publication/2026-ACL-MediaProfiling'>Paper</a> accepted at ACL 2026."
-- date: "January 2026"
-  content: "<a href='/publication/2026-ACC-EventTriggeredMARL'>Paper</a> accepted at ACC 2026."
-- date: "January 2026"
-  content: "Serving as a reviewer for ICML 2026."
-- date: "January 2026"
-  content: "Served as a Program Committee member for IJCAI 2026 and ECAI 2026."
-- date: "September 2025"
-  content: "<a href='/publication/2025-NIPS-Mechanistic'>Paper</a> accepted at Mechanistic Interpretability workshop @ NeurIPS 2025."
-- date: "September 2025"
-  content: "<a href='/publication/2025-NIPS-LAW'>Paper</a> accepted at LAW@NeurIPS 2025."
-- date: "August 2025"
-  content: "<a href='/publication/2025-AIAA-TargetEnclose'>Paper</a> accepted at AIAA SCITECH 2026."
-- date: "July 2025"
-  content: "Serving as a Program Committee member for AAAI 2026."
+  text: '<a href="/publications/#siddique2026inference">Inference-Time Policy Alignment for Fair RL</a> accepted at RLC 2026.'
+- date: "Apr 2026"
+  text: '<a href="/publications/#manzoor2026media">Multi-view media profiling suite</a> accepted at ACL 2026.'
+- date: "Mar 2026"
+  text: 'Received the <strong>Jamshidi Fellowship</strong> from UT San Antonio.'
+- date: "Jan 2026"
+  text: '<a href="/publications/#siddique2026eventmarl">Event-triggered policy gradient for MARL</a> accepted at ACC 2026.'
+- date: "Sep 2025"
+  text: 'Two papers accepted at NeurIPS 2025 workshops: <a href="/publications/#li2025spid">Mechanistic Interpretability</a> and <a href="/publications/#wallace2025recollab">LAW</a>.'
+- date: "Aug 2025"
+  text: '<a href="/publications/#siddique2026enclosing">Target-enclosing guidance paper</a> accepted at AIAA SciTech 2026.'
+- date: "Jul 2025"
+  text: '<a href="/publications/#siddique2025traffic">Fair MARL for traffic control</a> accepted at the ACM Journal on Autonomous Transportation Systems.'
 - date: "May 2025"
-  content: "Fair-PbRL accepted at the Machine Learning Journal (MLJ)."
+  text: '<a href="/publications/#siddique2025fpbrl">Fair preference-based RL</a> accepted at the <em>Machine Learning</em> journal.'
 - date: "May 2025"
-  content: "Three Papers accepted at the 2nd Reinforcement Learning Conference (RLC) 2025."
-- date: "March 2025"
-  content: "<a href='/publication/2025-MABS'>Paper</a> accepted at the International Workshop on Multi-Agent-Based Simulation (MABS) @ AAMAS 2025."
-- date: "March 2025"
-  content: "<a href='/publication/2025-Ala'>Paper</a> accepted at the Adaptive and Learning Agents (ALA) @ AAMAS 2025."
+  text: 'Three papers accepted at RLC 2025.'
+- date: "Mar 2025"
+  text: '<a href="/publications/#cofield2025modifly">MODIFLY</a> accepted at MABS 2025.'
 - date: "Feb 2025"
-  content: "Served as a student volunteer for AAAI 2025."
-- date: "Feb 2025"
-  content: "<a href='/publication/2024-EventtriggeredRL'>Paper</a> accepted at the American Control Conference (ACC) 2025."
+  text: '<a href="/publications/#siddique2025eventrl">Event-triggered RL control</a> accepted at ACC 2025.'
 - date: "Jan 2025"
-  content: "Received AAAI student scholarship for AAAI 2025."
-- date: "Jan 2025"
-  content: "Serving as a reviewer for ICLR, ICML, NeurIPS, and IJCAI."
-- date: "December 2024"
-  content: "<a href='/publication/2025-AAMAS'>Paper</a> accepted at AAMAS 2025 (Extended Abstract)."
-- date: "December 2024"
-  content: "<a href='/publication/2025-AAAI-DAI'>Paper</a> accepted at the Deployable AI workshop at AAAI 2025."
-- date: "December 2024"
-  content: "<a href='/publication/2025-AAAI-MALTA'>Paper</a> accepted at the MALTA workshop at AAAI 2025."
-- date: "November 2024"
-  content: "<a href='/publication/2024-NCAA'>Paper</a> accepted at Neural Computing and Applications (NCAA)."
-- date: "October 2024"
-  content: "Released a new <a href='/publication/2024-EventtriggeredRL'>paper</a> on arXiv."
-- date: "October 2024"
-  content: "Serving as a reviewer for ICLR and AISTATS 2024."
-- date: "August 2024"
-  content: "Received the RLC 2024 Registration Scholarship sponsored by the Cooperative AI Foundation."
-- date: "June 2024"
-  content: "Two <a href='/publication/2024-RLC-FairMARL'>papers</a> accepted at the CoCoMARL workshop at RLC 2024."
-- date: "June 2024"
-  content: "Serving as a reviewer for NeurIPS 2024."
-- date: "March 2024"
-  content: "<a href='/publication/2024-ICMI-OfflineRL'>Paper</a> accepted at ICMI 2024."
-- date: "January 2024"
-  content: "<a href='/publication/2024-AIAA-Scitech'>Paper</a> accepted at AIAA SCITECH 2024."
-- date: "July 2023"
-  content: "<a href='/publication/2023-MFPL-ICML'>Paper</a> accepted at MFPL@ICML 2024."
-- date: "July 2023"
-  content: "<a href='/publication/2023-ECAI-FAir-Pref'>Paper</a> accepted at ECAI 2024."
-- date: "June 2023"
-  content: "Received the Best Paper Award from ALA@AAMAS for the paper <a href='/publication/2023-ALA'>Fair Deep Reinforcement Learning with Generalized Gini Welfare Functions</a>."
-- date: "August 2022"
-  content: "Started my PhD at the University of Texas at San Antonio."
-- date: "May 2022"
-  content: "Joined Neurog as a reinforcement learning engineer."
-- date: "April 2022"
-  content: "Paper accepted at MPREF@IJCAI 2022."
-- date: "June 2021"
-  content: "<a href='/publication/2021-ICML-Fair-MARL-SOTO'>Paper</a> accepted at ICML 2021."
-- date: "June 2020"
-  content: "<a href='/publication/2020-ICML-Fair-DRL'>Paper</a> accepted at ICML 2020."
-- date: "Sep 2018"
-  content: "Joined the University of Michigan Shanghai Jiaotong Joint Institute as a Master's student."
+  text: 'Received the AAAI 2025 student scholarship.'
+- date: "Dec 2024"
+  text: 'Papers accepted at <a href="/publications/#siddique2025fappo">AAMAS 2025</a> (extended abstract) and the <a href="/publications/#siddique2025malta">MALTA workshop at AAAI 2025</a>.'
+- date: "Nov 2024"
+  text: '<a href="/publications/#qian2025compromise">From fair to compromise solutions in MORL</a> accepted at <em>Neural Computing and Applications</em>.'
+- date: "Aug 2024"
+  text: 'Received the RLC 2024 student award, sponsored by the Cooperative AI Foundation.'
+- date: "Jun 2024"
+  text: 'Two papers accepted at the CoCoMARL workshop at RLC 2024.'
+- date: "Jul 2023"
+  text: 'Papers accepted at <a href="/publications/#yu2023preferential">ECAI 2023</a> and the <a href="/publications/#siddique2023fpbrl">MFPL workshop at ICML 2023</a>.'
+- date: "Jun 2023"
+  text: '<a href="/publications/#yu2023ggf">Fair deep RL with generalized Gini welfare functions</a> received the <strong>Best Paper Award</strong> at ALA 2023.'
+- date: "Aug 2022"
+  text: 'Started my PhD at the University of Texas at San Antonio.'
+- date: "Jun 2021"
+  text: '<a href="/publications/#zimmer2021soto">Fair decentralized cooperative MARL</a> accepted at ICML 2021.'
+- date: "Jun 2020"
+  text: '<a href="/publications/#siddique2020fair">Fair multi-objective deep RL</a> accepted at ICML 2020.'

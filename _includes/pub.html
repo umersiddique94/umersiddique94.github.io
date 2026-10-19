@@ -1,0 +1,39 @@
+{% assign p = include.p %}
+<li class="pub" id="{{ p.key }}">
+  <div class="pub-thumb">
+    <span class="abbr">{{ p.abbr }}</span>
+    {% if p.img %}
+      <img src="{{ '/assets/img/papers/' | append: p.img | relative_url }}" alt="Figure from: {{ p.title | escape }}" loading="lazy" class="zoomable">
+    {% else %}
+      <div class="pub-tile"><span>{{ p.abbr }}</span><small>{{ p.year }}</small></div>
+    {% endif %}
+  </div>
+  <div class="pub-body">
+    <div class="pub-title">{{ p.title }}</div>
+    <div class="pub-authors">
+      {%- for a in p.authors -%}
+        {%- if forloop.last and forloop.length > 1 %} and {% endif -%}
+        {%- if a == site.title -%}<span class="me">{{ a }}</span>{%- else -%}{{ a }}{%- endif -%}
+        {%- unless forloop.last or forloop.rindex == 2 -%}, {% endunless -%}
+      {%- endfor -%}
+    </div>
+    <div class="pub-venue"><em>{{ p.venue }}</em>{% if p.type != "preprint" %}, {{ p.year }}{% endif %}</div>
+    {% if p.award %}<div class="pub-award"><i class="fa-solid fa-trophy"></i> {{ p.award }}</div>{% endif %}
+    <div class="pub-links">
+      {% if p.abstract %}<button class="btn toggle" data-target="abs">Abs</button>{% endif %}
+      {% if p.type != "preprint" and p.type != "patent" %}<button class="btn toggle" data-target="bib">Bib</button>{% endif %}
+      {% for l in p.links %}<a class="btn" href="{{ l[1] }}" target="_blank" rel="noopener">{{ l[0] }}</a>{% endfor %}
+    </div>
+    {% if p.abstract %}<div class="pub-extra abs" hidden><p>{{ p.abstract }}</p></div>{% endif %}
+    {% if p.type != "preprint" and p.type != "patent" %}
+      {% if p.type == "journal" %}{% assign bt = "article" %}{% assign vf = "journal  " %}{% else %}{% assign bt = "inproceedings" %}{% assign vf = "booktitle" %}{% endif %}
+      {% capture lb %}{% raw %}{{% endraw %}{% endcapture %}{% capture rb %}{% raw %}}{% endraw %}{% endcapture %}
+      <div class="pub-extra bib" hidden><pre>@{{ bt }}{{ lb }}{{ p.key }},
+  title     = {{ lb }}{{ p.title }}{{ rb }},
+  author    = {{ lb }}{{ p.authors | join: " and " }}{{ rb }},
+  {{ vf }} = {{ lb }}{{ p.venue }}{{ rb }},
+  year      = {{ lb }}{{ p.year }}{{ rb }}
+{{ rb }}</pre></div>
+    {% endif %}
+  </div>
+</li>
